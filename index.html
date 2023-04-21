@@ -14,16 +14,16 @@
     />
   </head>
   <body>
-    <div class="aaa">
-      <img src="./eisenhower-matrix.jpg" /><a
-        class="more_inf"
+    <div class="header">
+      <img class="header-img" src="./eisenhower-matrix.jpg" /><a
+        class="more-info"
         href="https://goal-life.com/page/method/matrix-eisenhower"
         >Want more details?</a
       >
     </div>
-    <div class="centered-main-page-element">
-      <div id="topSectionForAddingElementToList">
-        <label for="new-task">Add Item</label>
+    <div class="main-container">
+      <div id="add-task">
+        <label for="new-task" class="title">Add Item</label>
         <div class="task-row-wrapper">
           <input
             id="new-task"
@@ -33,9 +33,9 @@
           <button>Add</button>
         </div>
       </div>
-      <h3>Todo</h3>
-      <ul id="incompleteTasks">
-        <li>
+      <h3 class="title">Todo</h3>
+      <ul id="incomplete-tasks">
+        <li class="task-item">
           <input type="checkbox" />
           <label class="task">Pay Bills</label>
           <input
@@ -43,9 +43,9 @@
             class="task"
           />
           <button class="edit">Edit</button>
-          <button class="delete"><img src="./remove.svg" /></button>
+          <button class="delete"><img class="del-icon" src="./remove.svg" /></button>
         </li>
-        <li class="editMode">
+        <li class="edit-mode task-item">
           <input type="checkbox" />
           <label class="task">Go Shopping</label>
           <input
@@ -54,12 +54,12 @@
             class="task"
           />
           <button class="edit">Save</button>
-          <button class="delete"><img src="./remove.svg" /></button>
+          <button class="delete"><img class="del-icon" src="./remove.svg" /></button>
         </li>
       </ul>
-      <h3>Completed</h3>
+      <h3 class="title">Completed</h3>
       <ul id="completed-tasks">
-        <li>
+        <li class="completed task-item">
           <input
             type="checkbox"
             checked
@@ -70,7 +70,7 @@
             class="task"
           />
           <button class="edit">Edit</button>
-          <button class="delete"><img src="./remove.svg" /></button>
+          <button class="delete"><img class="del-icon" src="./remove.svg" /></button>
         </li>
       </ul>
     </div>
